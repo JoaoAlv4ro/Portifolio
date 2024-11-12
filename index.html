@@ -9,12 +9,12 @@
 <body class="flex flex-col">
 <!-- NAVBAR -->
   <nav class="flex-auto self-center fixed w-full z-20 top-0 start-0 mt-3">
-    <div class="bg-emerald-950 max-w-screen-xl flex flex-wrap items-center justify-between mx-4 py-4 px-6 :px-8 rounded-3xl md:rounded-full">
+    <div class="bg-emerald-950 max-w-screen flex flex-wrap items-center justify-between mx-4 py-4 px-6 :px-8 rounded-3xl md:rounded-full">
       <a href="" class="w-10 h-10 flex justify-center items-center bg-white rounded-full">
           <p class="text-xl font-nunito font-bold">JA</p>
       </a>
       <div class="flex md:order-2 space-x-3 md:space-x-0 rtl:space-x-reverse">
-          <button data-copy-to-clipboard-target="number" class="text-neutral-900 bg-gray-100 hover:bg-green-300 focus:ring-4 focus:outline-none inline-flex gap-2 focus:ring-green-400 rounded-lg text-sm font-semibold px-4 py-2 text-center items-center">
+          <button data-copy-to-clipboard-target="number" class="text-neutral-900 bg-gray-100 hover:bg-green-300 focus:ring-4 focus:outline-none inline-flex gap-2 focus:ring-green-400 rounded-lg text-sm font-semibold px-4 py-2 text-center items-center shadow-shape">
             <input id="number" type="text" class="hidden" value="+55 12 99744-4739" disabled readonly>
             <p class="hidden md:inline-flex">+55 12 99744-4739</p>
             <p class="md:hidden">Telefone</p>
@@ -32,13 +32,13 @@
       <div class="items-center justify-between hidden w-full md:flex md:w-auto md:order-1" id="navbar-sticky">
         <ul class="flex flex-col p-4 md:p-0 mt-4 font-medium border border-green-200 rounded-lg md:space-x-8 rtl:space-x-reverse md:flex-row md:mt-0 md:border-0">
           <li>
-            <a href="#" class="block py-2 px-3 text-neutral-100 rounded hover:bg-gray-100 hover:text-neutral-900">Sobre Mim</a>
+            <a href="#" class="block py-2 px-3 font-semibold text-neutral-100 rounded hover:bg-gray-100 hover:text-neutral-900 hover:shadow-shape">Projetos</a>
           </li>
           <li>
-            <a href="#" class="block py-2 px-3 text-neutral-100 rounded hover:bg-gray-100 hover:text-neutral-900">Projetos</a>
+            <a href="#" class="block py-2 px-3 font-semibold text-neutral-100 rounded hover:bg-gray-100 hover:text-neutral-900 hover:shadow-shape">Sobre Mim</a>
           </li>
           <li>
-            <a href="#" class="block py-2 px-3 text-neutral-100 rounded hover:bg-gray-100 hover:text-neutral-900">Contatos</a>
+            <a href="#" class="block py-2 px-3 font-semibold text-neutral-100 rounded hover:bg-gray-100 hover:text-neutral-900 hover:shadow-shape">Contatos</a>
           </li>
         </ul>
       </div>
@@ -46,26 +46,35 @@
   </nav>
 
 <!-- INTRODUÇÃO -->
-  <main class="mt-32">
-      <div class="container flex flex-wrap items-center justify-center space-y-8 md:space-x-12 md:space-y-0 mx-auto px-4 py-2">
+  <main class="mt-32 mb-20">
+      <div class="container flex flex-wrap items-center justify-center space-y-8 md:space-x-12 md:space-y-0 mx-auto px-6 py-2">
       <!-- Introdução -->
         <div class="flex-auto flex flex-col space-y-4 w-96">
-          <h1 class="text-4xl font-bold text-start">Prazer, eu sou o Álvaro!</h1>
-          <p class="text-lg text-justify">
+          <h1 class="md:hidden text-4xl font-bold">Prazer, eu sou o <b class="text-green-600">Álvaro!</b></h1>
+          <h1 class="hidden md:inline text-6xl font-bold">Prazer, eu sou o <b class="text-green-600">Álvaro!</b></h1>
+          <p class="text-md text-justify">
             Olá! Eu sou um estudante de Análise e Desenvolvimento de Sistemas em busca de oportunidades para aplicar e expandir meus conhecimentos em programação. Apaixonado por tecnologia e desenvolvimento, estou constantemente em aprendizado para aperfeiçoar minhas habilidades e conhecer as melhores práticas do mercado.
           </p>
           <!-- botões -->
-          <div class="flex self-baseline justify-around md:justify-start items-center gap-6">
-            <a href="" class="justify-center font-nunito text-white bg-neutral-900 hover:bg-neutral-800 hover:text-white focus:ring-4 focus:outline-none inline-flex gap-2 focus:ring-green-400 rounded-lg text-sm font-bold w-40 px-6 py-3 text-center items-center">
+          <div class="hidden md:flex md:justify-start items-center gap-6">
+            <a href="" class="shadow-shape justify-center font-nunito text-white bg-neutral-900 hover:bg-neutral-800 hover:text-white focus:ring-4 focus:outline-none inline-flex gap-2 focus:ring-green-400 rounded-lg text-md font-bold w-40 px-6 py-3 text-center items-center">
               Sobre Mim
             </a>
-            <a href="./src/Curriculo-JoãoÁlvaro.pdf" download="Curriculo-JoãoÁlvaro.pdf" class="justify-center font-nunito text-white bg-emerald-900 hover:bg-emerald-800 focus:ring-4 focus:outline-none inline-flex gap-2 focus:ring-green-400 rounded-lg text-sm font-bold w-40 px-6 py-3 text-center items-center">
+            <a href="./src/Curriculo-JoãoÁlvaro.pdf" download="Curriculo-JoãoÁlvaro.pdf" class="shadow-shape justify-center font-nunito text-white bg-emerald-900 hover:bg-emerald-800 focus:ring-4 focus:outline-none inline-flex gap-2 focus:ring-green-400 rounded-lg text-md font-bold w-40 px-6 py-3 text-center items-center">
+              Curriculo
+            </a>
+          </div>
+          <div class="flex md:hidden justify-between items-center gap-6">
+            <a href="" class="shadow-shape justify-center font-nunito text-white bg-neutral-900 hover:bg-neutral-800 hover:text-white focus:ring-4 focus:outline-none inline-flex gap-2 focus:ring-green-400 rounded-lg text-md font-bold w-40 px-6 py-3 text-center items-center">
+              Sobre Mim
+            </a>
+            <a href="./src/Curriculo-JoãoÁlvaro.pdf" download="Curriculo-JoãoÁlvaro.pdf" class="shadow-shape justify-center font-nunito text-white bg-emerald-900 hover:bg-emerald-800 focus:ring-4 focus:outline-none inline-flex gap-2 focus:ring-green-400 rounded-lg text-md font-bold w-40 px-6 py-3 text-center items-center">
               Curriculo
             </a>
           </div>
         </div>
       <!-- Imagem -->
-        <div class="flex-auto bg-emerald-950 rounded-3xl w-64 self-end">
+        <div class="flex-auto bg-emerald-950 rounded-3xl w-64 shadow-shape ">
           <img src="./src/imgs/devFoto.png" alt="Desenvolvedor" class="transition duration-300 rounded-3xl grayscale hover:grayscale-0">
         </div>
       <!-- Redes -->
@@ -90,7 +99,49 @@
   </main>
   
 <!-- PROJETOS -->
-  <section class=""></section>
+  <section class="bg-emerald-950">
+    <div class="container flex flex-col items-center justify-center mx-auto px-5 py-8">
+      <h1 class="text-4xl font-bold text-white">Meus Projetos!</h1>
+      <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8 mt-8">
+        <div class="bg-white shadow-shape rounded-3xl hover:scale-105 hover:transition hover:duration-300">
+          <div class="px-5 pt-6">
+              <a href="https://github.com/davihelisson/FATEC-API-Under_Devs" class="flex items-center text-slate-900 mb-2 gap-2 underline">
+                  <h3 class="align-text-bottom text-3xl font-bold">Scrum360</h5>
+                  <svg class="w-6 h-6" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" width="24" height="24" fill="none" viewBox="0 0 24 24">
+                    <path stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M13.213 9.787a3.391 3.391 0 0 0-4.795 0l-3.425 3.426a3.39 3.39 0 0 0 4.795 4.794l.321-.304m-.321-4.49a3.39 3.39 0 0 0 4.795 0l3.424-3.426a3.39 3.39 0 0 0-4.794-4.795l-1.028.961"/>
+                  </svg>                    
+              </a>
+          </div>
+          <hr class="h-px mb-6 bg-green-400 border-0">
+          <a href="https://github.com/davihelisson/FATEC-API-Under_Devs">
+            <img class="rounded-3xl border-t-2 border-green-400" src="./src/imgs/Scrum360.png" alt="" />
+          </a>
+        </div>
+        <div class="bg-white shadow-shape rounded-3xl hover:scale-105 hover:transition hover:duration-300">
+          <div class="px-5 pt-6">
+              <a href="">
+                  <h3 class="mb-2 align-text-bottom text-3xl font-bold tracking-tight text-neutral-900">Em breve</h5>
+              </a>
+          </div>
+          <hr class="h-px mb-6 bg-green-400 border-0">
+          <a href="">
+            <img class="rounded-3xl border-t-2 border-green-400 h-44 w-full" src="./src/imgs/Placeholder.svg" alt="" />
+          </a>
+        </div>
+        <div class="bg-white shadow-shape rounded-3xl hover:scale-105 hover:transition hover:duration-300">
+          <div class="px-5 pt-6">
+              <a href="">
+                  <h3 class="mb-2 align-text-bottom text-3xl font-bold tracking-tight text-neutral-900">Em breve</h5>
+              </a>
+          </div>
+          <hr class="h-px mb-6 bg-green-400 border-0">
+          <a href="">
+            <img class="rounded-3xl border-t-2 border-green-400 h-44 w-full" src="./src/imgs/Placeholder.svg" alt="" />
+          </a>
+        </div>
+      </div>
+    </div>
+  </section>
 
 <!-- SOBRE MIM -->
   <section class=""></section>
